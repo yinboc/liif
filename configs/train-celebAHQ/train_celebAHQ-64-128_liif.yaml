@@ -1,0 +1,62 @@
+train_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/celebAHQ/64
+      root_path_2: ./load/celebAHQ/128
+      split_file: ./load/celebAHQ/split.json
+      split_key: train
+      cache: bin
+  wrapper:
+    name: sr-implicit-uniform-varied
+    args:
+      size_min: 64
+      size_max: 128
+      sample_q: 1024
+      augment: true
+  batch_size: 16
+
+val_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/celebAHQ/64
+      root_path_2: ./load/celebAHQ/128
+      split_file: ./load/celebAHQ/split.json
+      split_key: val
+      first_k: 100
+      cache: bin
+  wrapper:
+    name: sr-implicit-paired
+    args:
+      sample_q: 1024
+  batch_size: 16
+
+data_norm:
+  inp: {sub: [0.5], div: [0.5]}
+  gt: {sub: [0.5], div: [0.5]}
+
+model:
+  name: liif
+  args:
+    encoder_spec:
+      name: edsr-baseline
+      args:
+        no_upsampling: true
+    imnet_spec:
+      name: mlp
+      args:
+        out_dim: 3
+        hidden_list: [256, 256, 256, 256]
+
+optimizer:
+  name: adam
+  args:
+    lr: 1.e-4
+epoch_max: 200
+multi_step_lr:
+  milestones: [100]
+  gamma: 0.1
+
+epoch_val: 1
+epoch_save: 100

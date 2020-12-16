@@ -1,0 +1,17 @@
+test_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/celebAHQ/64
+      root_path_2: ./load/celebAHQ/128
+      split_file: ./load/celebAHQ/split.json
+      split_key: val
+      cache: bin
+  wrapper:
+    name: sr-implicit-paired
+    args: {}
+  batch_size: 1
+
+data_norm:
+  inp: {sub: [0.5], div: [0.5]}
+  gt: {sub: [0.5], div: [0.5]}
