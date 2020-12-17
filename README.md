@@ -66,4 +66,4 @@ RDN-LIIF|[Download (256M)](https://www.dropbox.com/s/mzha6ll9kb9bwy0/rdn-liif.pt
 
 Train: `python train_liif.py --config configs/train-celebAHQ/[CONFIG_NAME].yaml`.
 
-Test: `python test.py --config configs/test/test-celebAHQ-32-256.yaml --model [MODEL_PATH]` (or `test-celebAHQ-64-128.yaml`).
+Test: `python test.py --config configs/test/test-celebAHQ-32-256.yaml --model [MODEL_PATH]` (or `test-celebAHQ-64-128.yaml`). We use `epoch-best.pth` in corresponding saving folder.
