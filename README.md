@@ -35,7 +35,7 @@ If you find our work useful in your research, please cite:
 
 1. Download a DIV2K pre-trained model.
 
-Name|Pretrained model
+Name|Pre-trained model
 :-:|:-:
 EDSR-baseline-LIIF|[Download (19M)](https://www.dropbox.com/s/6f402wcn4v83w2v/edsr-baseline-liif.pth?dl=0)
 RDN-LIIF|[Download (256M)](https://www.dropbox.com/s/mzha6ll9kb9bwy0/rdn-liif.pth?dl=0)
