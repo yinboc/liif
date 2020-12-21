@@ -66,7 +66,7 @@ python demo.py --input xxx.png --model [MODEL_PATH] --resolution [HEIGHT],[WIDTH
 
 - For `train_liif.py`, by default, the save folder is at `save/_[CONFIG_NAME]`. We can use `--name` to specify a name if needed.
 
-- For dataset args in configs, `cache: in_memory` denotes pre-loading into memory (may require large memory, e.g. ~40GB for DIV2K), `cache: bin` denotes creating binary files (in the same folder) for the first time, `cache: none` denotes direct loading. We can modify it according to the hardware resources before running the training scripts.
+- For dataset args in configs, `cache: in_memory` denotes pre-loading into memory (may require large memory, e.g. ~40GB for DIV2K), `cache: bin` denotes creating binary files (in a sibling folder) for the first time, `cache: none` denotes direct loading. We can modify it according to the hardware resources before running the training scripts.
 
 **1. DIV2K experiments**
 
