@@ -25,6 +25,12 @@ If you find our work useful in your research, please cite:
 }
 ```
 
+### Environment
+- Python 3
+- Pytorch 1.6.0
+- TensorboardX
+- yaml, numpy, tqdm, imageio
+
 ## Quick Start
 
 1. Download a DIV2K pre-trained model.
@@ -41,12 +47,6 @@ python demo.py --input xxx.png --model [MODEL_PATH] --resolution [HEIGHT],[WIDTH
 ```
 
 ## Reproducing Experiments
-
-### Environment
-- Python 3
-- Pytorch 1.6.0
-- TensorboardX
-- yaml, numpy, tqdm, imageio
 
 ### Data
 
