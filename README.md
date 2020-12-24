@@ -33,10 +33,10 @@ If you find our work useful in your research, please cite:
 
 1. Download a DIV2K pre-trained model.
 
-Name|Pre-trained model
-:-:|:-:
-EDSR-baseline-LIIF|[Download (19M)](https://www.dropbox.com/s/6f402wcn4v83w2v/edsr-baseline-liif.pth?dl=0)
-RDN-LIIF|[Download (256M)](https://www.dropbox.com/s/mzha6ll9kb9bwy0/rdn-liif.pth?dl=0)
+Model|File size|Download
+:-:|:-:|:-:
+EDSR-baseline-LIIF|18M|[Dropbox](https://www.dropbox.com/s/6f402wcn4v83w2v/edsr-baseline-liif.pth?dl=0) &#124; [Google Drive](https://drive.google.com/file/d/1wBHSrgPLOHL_QVhPAIAcDC30KSJLf67x/view?usp=sharing)
+RDN-LIIF|256M|[Dropbox](https://www.dropbox.com/s/mzha6ll9kb9bwy0/rdn-liif.pth?dl=0) &#124; [Google Drive](https://drive.google.com/file/d/1xaAx6lBVVw_PJ3YVp02h3k4HuOAXcUkt/view?usp=sharing)
 
 2. Convert your image to LIIF and present it in a given resolution (with GPU 0, `[MODEL_PATH]` denotes the `.pth` file)
 
