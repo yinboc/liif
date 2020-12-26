@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
-    img = transforms.ToTensor()(Image.open(args.input))
+    img = transforms.ToTensor()(Image.open(args.input).convert('RGB'))
 
     model = models.make(torch.load(args.model)['model'], load_sd=True).cuda()
 
