@@ -3,8 +3,10 @@
 This repository contains the official implementation for LIIF introduced in the following paper:
 
 [**Learning Continuous Image Representation with Local Implicit Image Function**](https://arxiv.org/abs/2012.09161)
-
+<br>
 [Yinbo Chen](https://yinboc.github.io/), [Sifei Liu](https://www.sifeiliu.net/), [Xiaolong Wang](https://xiaolonw.github.io/)
+<br>
+CVPR 2021 (Oral)
 
 The project page with video is at https://yinboc.github.io/liif/.
 
