@@ -17,11 +17,12 @@ The project page with video is at https://yinboc.github.io/liif/.
 If you find our work useful in your research, please cite:
 
 ```
-@article{chen2020learning,
-  title={Learning Continuous Image Representation with Local Implicit Image Function},
+@inproceedings{chen2021learning,
+  title={Learning continuous image representation with local implicit image function},
   author={Chen, Yinbo and Liu, Sifei and Wang, Xiaolong},
-  journal={arXiv preprint arXiv:2012.09161},
-  year={2020}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8628--8638},
+  year={2021}
 }
 ```
 
